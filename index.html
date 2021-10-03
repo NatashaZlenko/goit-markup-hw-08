@@ -21,7 +21,6 @@
   <body>
     <header class="header">
       <div class="container page-header">
-
         <nav class="site-nav">
 
           <a href="./index.html" class="logo logo-header link">
@@ -135,6 +134,7 @@
             </li>
               </ul>
             </div>
+        </div>
         </div>
       </div>
     </header>
@@ -272,6 +272,7 @@
 
               <img
                 srcset="./images/image4.jpg 270w, ./images/image42x.jpg 640w"
+                sizes="(min-width: 480px) 100vw, (min-width: 768px) 640px, (min-width: 1200px) 100vw"
                 src="./images/image4.jpg"
                 alt="улыбающийся мужчина в коричневой рубашке и очках"
               />
@@ -316,6 +317,7 @@
             <li class="member-card">
               <img
                 srcset="./images/image5.jpg 270w, ./images/image52x.jpg 640w"
+                sizes="(min-width: 480px) 100vw, (min-width: 768px) 640px, (min-width: 1200px) 100vw"
                 src="./images/image5.jpg"
                 alt="улыбающаяся женщина в очках с белыми волосами"
               />
@@ -355,6 +357,7 @@
             <li class="member-card">
               <img
                 srcset="./images/image6.jpg 270w, ./images/image62x.jpg 640w"
+                sizes="(min-width: 480px) 100vw, (min-width: 768px) 640px, (min-width: 1200px) 100vw"
                 src="./images/image6.jpg"
                 alt="улыбающийся мужчина в голубой рубашке"
               />
@@ -394,6 +397,7 @@
             <li class="member-card">
               <img
                 srcset="./images/image7.jpg 270w, ./images/image72x.jpg 640w"
+                sizes="(min-width: 480px) 100vw, (min-width: 768px) 640px, (min-width: 1200px) 100vw"
                 src="./images/image7.jpg"
                 alt="улыбающийся мужчина в очках и черной футболке"
               />
@@ -567,7 +571,7 @@
             <div class="subscribe-content">
             <input
               class="subscribe-content__input"
-              type="client-email"
+              type="email"
               name="client-email"
               id="client-email"
               placeholder="E-mail"
@@ -651,8 +655,8 @@
             <label for="agreement" class="form__agreement">
                 <input type="checkbox" name="agreement" value="agreement" id="agreement" class="form__checkbox "/>
                 <span class="form__checkbox-icon"> </span>
-                    <p class="form__text">Соглашаюсь с рассылкой и принимаю 
-                    <a class="form__conditions" href=""> Условия договора</a> </p>
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a class="form__conditions" href=""> Условия договора</a>
             </label>
 
           </div>

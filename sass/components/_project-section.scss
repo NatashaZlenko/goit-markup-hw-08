@@ -98,6 +98,10 @@
     line-height: 1.55;
 
     color: $primaryBackgroundColor;
+
+    @media screen and (min-width: 320px) {
+      font-size: 14px;
+    }
   }
 
   &__meta {
