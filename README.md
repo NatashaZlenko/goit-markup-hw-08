@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-Адаптивность 
+# goit-markup-hw-07
+методология BEM и препроцессор SASS

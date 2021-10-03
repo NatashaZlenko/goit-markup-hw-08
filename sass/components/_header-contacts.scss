@@ -1,0 +1,101 @@
+.main-contacts {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__element:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+
+      color: $primaryTextColor;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    @media screen and (min-width: 768px) {
+      color: $accentTextColor;
+    }
+  }
+
+  &__icon {
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+
+      fill: $primaryTextColor;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    @media screen and (min-width: 768px) {
+      fill: $accentTextColor;
+    }
+  }
+}
+
+// .main-contacts {
+//   display: flex;
+//   margin-left: auto;
+
+//   &__element:not(:last-child) {
+//     margin-right: 50px;
+//   }
+
+//   &__link {
+//     @extend %flex-center;
+
+//     color: $primaryTextColor;
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//   }
+
+//   &__link:hover,
+//   &__link:focus {
+//     color: $accentTextColor;
+//   }
+
+//   &__icon {
+//     margin-right: 10px;
+
+//     fill: $primaryTextColor;
+
+//     @extend %transition-color;
+//   }
+
+//   &__link:hover &__icon,
+//   &__link:focus &__icon {
+//     fill: $accentTextColor;
+//   }
+// }

@@ -1,0 +1,179 @@
+.form {
+  @extend %flex-center;
+  flex-direction: column;
+
+  width: 100%;
+
+  &__group {
+    width: 100%;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__line {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+    fill: $secondaryTextColor;
+
+    @extend %flex-center;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 11px 42px;
+    margin: 0;
+
+    border: 1px solid $inputModalColor;
+    border-radius: 4px;
+
+    @extend %transition-border;
+  }
+
+  &__input:focus {
+    border-color: $accentTextColor;
+    outline: none;
+  }
+
+  &__input:hover {
+    cursor: pointer;
+  }
+
+  &__input:focus + &__icon {
+    fill: $accentTextColor;
+  }
+
+  &__textarea:focus {
+    border-color: $accentTextColor;
+    outline: none;
+  }
+
+  &__textarea:hover {
+    cursor: pointer;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+  }
+
+  &__header {
+    margin-top: 0;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+
+    color: $secondaryTextColor;
+  }
+
+  &__textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $placeholderColor;
+  }
+
+  &__textarea {
+    margin-bottom: -10px;
+  }
+
+  &__agreement-area {
+    display: flex;
+
+    margin-bottom: -10px;
+    margin-top: 20px;
+  }
+
+  &__checkbox-icon {
+    display: inline-block;
+
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid $secondaryTextColor;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px $checkboxShadow;
+  }
+
+  &__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+  }
+
+  &__checkbox:checked + &__checkbox-icon {
+    background-color: $accentTextColor;
+    background-image: url("../images/icon-checked.svg");
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $accentTextColor;
+    background-repeat: no-repeat;
+    box-shadow: unset;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__agreement {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    line-height: 1.71;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+
+  &__conditions {
+    color: $accentTextColor;
+  }
+
+  &__textarea {
+    padding: 12px 16px;
+    border: 1px solid $inputModalColor;
+    border-radius: 4px;
+
+    resize: none;
+
+    @extend %transition-border;
+  }
+
+  &__submit {
+    margin-top: 30px;
+    padding: 10px 55px;
+    border-radius: 4px;
+    border: none;
+
+    width: 200px;
+
+    color: $primaryBackgroundColor;
+    background-color: $accentTextColor;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    font-weight: 700;
+    line-height: 1.8;
+  }
+
+  &__submit:hover,
+  &__submit:focus {
+    cursor: pointer;
+  }
+}

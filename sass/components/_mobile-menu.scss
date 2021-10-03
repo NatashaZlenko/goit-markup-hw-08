@@ -1,0 +1,132 @@
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px 15px 48px 40px;
+  z-index: 1;
+
+  background-color: $primaryBackgroundColor;
+
+  &__down {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.mobile-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu-button__open {
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $accentTextColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button__close {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: transparent;
+
+  &-sign {
+    fill: $secondaryTextColor;
+  }
+
+  &:hover &-sign,
+  &:focus &-sign {
+    fill: $accentTextColor;
+  }
+}
+
+.mobile-nav {
+  &__element {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+  }
+
+  &__element:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    color: $secondaryTextColor;
+  }
+
+  &__link-current {
+    color: $accentTextColor;
+  }
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+
+  &__number {
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+
+  &__number-link {
+    color: $accentTextColor;
+  }
+
+  &__email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+
+  &__email-link {
+    color: $primaryTextColor;
+  }
+}
+
+.mobile-socnet {
+  display: flex;
+  padding: 0;
+
+  list-style: none;
+
+  &__element:not(:last-child) {
+    padding-right: 10px;
+    border-right: solid 1px $mobileMenuBorder;
+  }
+
+  &__element:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: $accentTextColor;
+  }
+}

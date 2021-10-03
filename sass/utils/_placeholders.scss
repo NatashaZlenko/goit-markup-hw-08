@@ -1,0 +1,40 @@
+%transition-color {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-fill {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-background {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-border {
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-opacity {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-box-shadow {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-transform {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
