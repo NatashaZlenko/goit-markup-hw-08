@@ -875,7 +875,6 @@ img {
   opacity: 1;
   width: 100%;
   height: 100%;
-  padding: 82px 15px 104px 15px;
   overflow-y: scroll;
 }
 
@@ -891,28 +890,33 @@ img {
 
 .modal {
   position: absolute;
-  width: 100vw;
-  padding: 50px 40px 30px;
+  padding: 50px 40px 30px 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 41px;
+  margin-bottom: 104px;
+  min-height: 609px;
   background-color: #ffffff;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 548px) {
   .modal {
     -webkit-transform: scale(1) translate(-50%, -50%);
             transform: scale(1) translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    max-width: 450px;
-    max-height: 609px;
+    margin: 0;
+    min-width: 450px;
+    min-height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
-    max-height: 581px;
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1106,6 +1110,12 @@ img {
   .form__agreement {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .form__agreement {
+    display: inline;
   }
 }
 

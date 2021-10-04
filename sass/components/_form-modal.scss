@@ -142,6 +142,10 @@
       font-size: 14px;
       line-height: 1.71;
     }
+
+    @media screen and (max-width: 475px) {
+      display: inline;
+    }
   }
 
   &__conditions {
