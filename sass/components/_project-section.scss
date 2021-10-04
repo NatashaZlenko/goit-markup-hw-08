@@ -94,13 +94,16 @@
   &__info {
     margin: 0;
 
-    font-size: 18px;
     line-height: 1.55;
 
     color: $primaryBackgroundColor;
 
     @media screen and (min-width: 320px) {
       font-size: 14px;
+    }
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
     }
   }
 
